@@ -34,4 +34,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^table/subsidy_dollars_top5fips/$', views.SubsidyDollarsTopFiveCounties.as_view()),
     url(r'^table/subsidy_dollars_top5crops/$', views.SubsidyDollarsTopFiveCommodities.as_view()),
+    url(r'^docs/', include('rest_framework_docs.urls')),
 ]
